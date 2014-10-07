@@ -7,8 +7,7 @@ with open("scores.txt", 'r') as restaurant_ratings:
         aline = line.rstrip().split(':')
 #populate a dictionary with restaurant names as keys with rating values
 
-# changed order of retreiving the input
-        restaurant_rating_dict[aline[1]] = aline[0]
+        restaurant_rating_dict[aline[0]] = aline[1]
 
 
 #get keys from the dictionary
@@ -37,6 +36,7 @@ with open("scores.txt", 'r') as restaurant_ratings:
 
             if index == number_of_keys:
                 break
+
 
 
 # on github there is a hint file
